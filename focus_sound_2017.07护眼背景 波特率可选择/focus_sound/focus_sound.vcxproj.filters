@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="UI">
+      <UniqueIdentifier>{1ce2bb22-0a29-4701-a161-9b94cc836764}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="加密">
+      <UniqueIdentifier>{58597823-acc9-4e91-b133-c923cfb08448}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="串口">
+      <UniqueIdentifier>{b2e46b40-02d7-41ec-9cc4-c2548204424f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="focus_sound.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="focus_soundDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="PasswordDialog.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Seniorset.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="BCMenu.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="BitItem.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="BitSlider.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="BitWnd.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="BtnST.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="AES.cpp">
+      <Filter>加密</Filter>
+    </ClCompile>
+    <ClCompile Include="serialport.cpp">
+      <Filter>串口</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="focus_sound.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="focus_soundDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="LC_DLL.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="PasswordDialog.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Pcomm.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Seniorset.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="BCMenu.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="BitItem.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="BitSlider.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="BitWnd.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="BtnST.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="AES.h">
+      <Filter>加密</Filter>
+    </ClInclude>
+    <ClInclude Include="serialport.h">
+      <Filter>串口</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\滑块\BarActive.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\滑块\BarBack.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="bei.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\bitmap1.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\file\f3.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\focus_sound.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\Folder Type 1 Color Green.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\sound\g1.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\sound\g3.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\sound\g4.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\icon1.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\ico\icon1.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\idr_main.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\logo.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\ico\logo.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\ico\logo_bit.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\滑块\Thumb.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\timg.jpg">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\timg1.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\ico\水晶\2026\VISTA水晶图标下载2.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\ico\下载.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\ico\下载固件.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\ico\文档图标.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\ico\色点.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\ico\获取版本.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\ico\配置图标.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="focus_sound.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\focus_sound.rc2">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\jpg1.bin">
+      <Filter>资源文件</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+</Project>

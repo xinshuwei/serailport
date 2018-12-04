@@ -1,0 +1,434 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\focus_sound.rc2""  // 非 Microsoft Visual C++ 编辑的资源\r\n"
+    "#include ""l.CHS\\afxres.rc""      // 标准组件\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAM            ICON                    "res\\ico\\logo.ico"
+IDI_ICON_OPENFILE       ICON                    "res\\file\\f3.ico"
+IDI_ICON_CONFIG         ICON                    "res\\ico\\配置图标.ico"
+IDI_ICON2               ICON                    "res\\ico\\色点.ico"
+IDI_ICON3               ICON                    "res\\ico\\文档图标.ico"
+IDI_ICON_UPDATE         ICON                    "res\\ico\\下载.ico"
+IDI_ICON_hardupdate     ICON                    "res\\ico\\下载固件.ico"
+IDI_ICON_getversion     ICON                    "res\\ico\\获取版本.ico"
+IDI_ICON_mute           ICON                    "res\\sound\\g1.ico"
+IDI_ICON_DAC_on         ICON                    "res\\sound\\g3.ico"
+IDI_ICON_gain           ICON                    "res\\sound\\g4.ico"
+IDI_ICON1               ICON                    "res\\ico\\水晶\\2026\\VISTA水晶图标下载2.ico"
+IDI_ICON4               ICON                    "res\\ico\\logo.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 182, 92
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 focus_sound"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    LTEXT           "focus_sound 1.0.6版",IDC_STATIC,24,35,114,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2017",IDC_STATIC,24,49,114,8
+    DEFPUSHBUTTON   "确定",IDOK,122,55,50,14,WS_GROUP
+END
+
+IDD_FOCUS_SOUND_DIALOG DIALOGEX 0, 0, 190, 294
+STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | DS_FIXEDSYS | DS_CENTER | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TRANSPARENT | WS_EX_CLIENTEDGE | WS_EX_STATICEDGE | WS_EX_APPWINDOW
+CAPTION " "
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    COMBOBOX        IDC_COMBO_HVERSION,40,10,43,57,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP,WS_EX_TRANSPARENT
+    COMBOBOX        IDC_COMBO1,106,11,37,47,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "打开固件",IDC_BUTTON_OPENFILE,120,68,50,14,0,WS_EX_TRANSPARENT
+    PUSHBUTTON      "升级固件",IDC_BUTTON_HARDUPDATE,120,84,50,14,0,WS_EX_TRANSPARENT
+    PUSHBUTTON      "读取版本",IDC_BUTTON_GETVERSION,120,100,50,14,0,WS_EX_TRANSPARENT
+    PUSHBUTTON      "配置增益",IDC_BUTTON_Gain,133,217,43,14,0,WS_EX_TRANSPARENT
+    PUSHBUTTON      "静音",IDC_BUTTON_MUTE,83,239,40,14,0,WS_EX_TRANSPARENT
+    PUSHBUTTON      "使能输出",IDC_BUTTON_DAC_ON,133,239,42,14,0,WS_EX_TRANSPARENT
+    COMBOBOX        IDC_COMBO_DSPNUM,51,139,35,50,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP,WS_EX_TRANSPARENT
+    COMBOBOX        IDC_COMBO_SOUNDTYPE,51,154,34,61,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP,WS_EX_TRANSPARENT
+    COMBOBOX        IDC_COMBO_DSPVERSION,51,170,35,47,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP,WS_EX_TRANSPARENT
+    PUSHBUTTON      "加载参数",IDC_BUTTON_DSP,127,200,50,14,0,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_EDIT_FILE,15,40,160,14,ES_AUTOHSCROLL,WS_EX_ACCEPTFILES | WS_EX_TRANSPARENT
+    LTEXT           "硬件类型",IDC_STATIC,8,12,28,8,0,WS_EX_TRANSPARENT
+    LTEXT           "串口号",IDC_STATIC,84,12,22,8,0,WS_EX_TRANSPARENT
+    LTEXT           "固件版本:",IDC_STATIC_HARD,24,92,64,11,0,WS_EX_TRANSPARENT
+    LTEXT           "硬件版本:",IDC_STATIC_SOFT,24,79,62,11,0,WS_EX_TRANSPARENT
+    LTEXT           "声音类型",IDC_STATIC,12,154,28,8,0,WS_EX_TRANSPARENT
+    LTEXT           "换能器个数",IDC_STATIC,9,140,35,8,0,WS_EX_TRANSPARENT
+    LTEXT           "换能器大小",IDC_STATIC,10,171,35,8,0,WS_EX_TRANSPARENT
+    LTEXT           "增益调节",IDC_STATIC,76,220,28,8,0,WS_EX_TRANSPARENT
+    LTEXT           "固件版本",IDC_STATIC,22,58,28,8,0,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_EDIT_GAIN,110,218,19,14,ES_CENTER | ES_AUTOHSCROLL | ES_NUMBER,WS_EX_TRANSPARENT
+    LTEXT           "驱动版本",IDC_STATIC,25,203,31,8
+    LTEXT           "",IDC_STATIC_SVersion,55,203,39,10
+    LTEXT           "驱动版本:",IDC_STATIC,24,105,31,8
+    LTEXT           "",IDC_STATIC_DSP,55,105,38,8
+    LTEXT           "",IDC_STATIC_SoftVersion,60,58,40,10
+    CONTROL         "换能器",IDC_RADIO_huanneng,"Button",BS_AUTORADIOBUTTON,30,128,37,10
+    CONTROL         "薄膜",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,119,128,30,10
+    COMBOBOX        IDC_COMBO_Msize,133,138,46,42,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP,WS_EX_TRANSPARENT
+    COMBOBOX        IDC_COMBO_Mnum,133,154,45,41,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP,WS_EX_TRANSPARENT
+    COMBOBOX        IDC_COMBO_Mversion,133,170,45,40,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP,WS_EX_TRANSPARENT
+    LTEXT           "薄膜面积",IDC_STATIC,97,139,30,9
+    LTEXT           "薄膜数量",IDC_STATIC,97,153,28,8
+    LTEXT           "参数版本",IDC_STATIC,96,170,28,8
+    GROUPBOX        "换能器参数",IDC_STATIC,6,119,86,81
+    GROUPBOX        "薄膜参数",IDC_STATIC,93,119,90,82
+    PUSHBUTTON      "设为默认参数",IDC_BUTTON_SaveData,17,238,57,14
+    LTEXT           "空闲",IDC_STATICZT,6,262,177,14,0,WS_EX_TRANSPARENT
+    COMBOBOX        IDC_COMBO2,50,186,35,39,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "参数版本",IDC_STATIC,13,187,28,8
+    PUSHBUTTON      "搜串口",IDC_BUTTON_search,144,10,35,14
+    COMBOBOX        IDC_COMBO3,106,25,37,48,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "波特率",IDC_STATIC,82,27,22,8
+END
+
+IDD_DIALOG_PASSWORD DIALOGEX 0, 0, 190, 87
+STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TRANSPARENT
+CAPTION "口令"
+FONT 10, "宋体", 400, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_EDIT_PASSWORD,87,28,50,14,ES_PASSWORD | ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "确定",IDOK,34,58,50,14
+    PUSHBUTTON      "取消",IDCANCEL,106,57,50,14
+    LTEXT           "请输入密码：",IDC_STATIC,37,31,46,8
+END
+
+IDD_DIALOG_Advanced DIALOGEX 0, 0, 189, 63
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "高级设置登陆"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT1,47,18,103,14,ES_PASSWORD | ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "确定",IDOK,32,38,50,14
+    PUSHBUTTON      "取消",IDCANCEL,104,38,50,14
+    LTEXT           "密码：",IDC_STATIC,19,20,25,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,1,8
+ PRODUCTVERSION 1,0,1,9
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x9L
+#else
+ FILEFLAGS 0x8L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "CompanyName", "audfly"
+            VALUE "FileDescription", "聚音宝上位机工具"
+            VALUE "FileVersion", "1.0.1.8"
+            VALUE "InternalName", "focus_sound.exe"
+            VALUE "LegalCopyright", " (C) <清听升学>保留所有权利。"
+            VALUE "OriginalFilename", "focus_sound.exe"
+            VALUE "PrivateBuild", "2017/03/23"
+            VALUE "ProductName", "聚音宝上位机"
+            VALUE "ProductVersion", "1.0.1.9"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 175
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 85
+    END
+
+    IDD_FOCUS_SOUND_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 183
+        VERTGUIDE, 1
+        VERTGUIDE, 40
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 281
+    END
+
+    IDD_DIALOG_PASSWORD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 183
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 80
+    END
+
+    IDD_DIALOG_Advanced, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 182
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 56
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP_LOGO         BITMAP                  "res\\logo.bmp"
+IDB_BITMAP1             BITMAP                  "res\\timg1.bmp"
+IDB_BITMAP2             BITMAP                  "res\\ico\\logo_bit.ico"
+IDB_BITMAP3             BITMAP                  "bei.bmp"
+IDB_BITMAP_ACTIVE       BITMAP                  "res\\滑块\\BarActive.bmp"
+IDB_BITMAP_NORMAL       BITMAP                  "res\\滑块\\BarBack.bmp"
+IDB_BITMAP_THUMB        BITMAP                  "res\\滑块\\Thumb.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_FOCUS_SOUND_DIALOG DLGINIT
+BEGIN
+    IDC_COMBO_HVERSION, 0x403, 8, 0
+0x5346, 0x3142, 0x565f, 0x0033, 
+    IDC_COMBO_HVERSION, 0x403, 6, 0
+0x5346, 0x3142, 0x0053, 
+    IDC_COMBO_HVERSION, 0x403, 7, 0
+0x5346, 0x5f43, 0x3156, "\000" 
+    IDC_COMBO_HVERSION, 0x403, 7, 0
+0x5346, 0x5f45, 0x3156, "\000" 
+    IDC_COMBO_DSPNUM, 0x403, 3, 0
+0x3035, "\000" 
+    IDC_COMBO_DSPNUM, 0x403, 3, 0
+0x3636, "\000" 
+    IDC_COMBO_DSPNUM, 0x403, 4, 0
+0x3531, 0x0030, 
+    IDC_COMBO_DSPNUM, 0x403, 4, 0
+0x3532, 0x0030, 
+    IDC_COMBO_DSPNUM, 0x403, 4, 0
+0x3533, 0x0030, 
+    IDC_COMBO_DSPNUM, 0x403, 4, 0
+0x3035, 0x0030, 
+    IDC_COMBO_SOUNDTYPE, 0x403, 6, 0
+0x7541, 0x6964, 0x006f, 
+    IDC_COMBO_SOUNDTYPE, 0x403, 4, 0
+0x694d, 0x0063, 
+    IDC_COMBO_SOUNDTYPE, 0x403, 6, 0
+0x6f56, 0x6369, 0x0065, 
+    IDC_COMBO_DSPVERSION, 0x403, 5, 0
+0x3031, 0x6d6d, "\000" 
+    IDC_COMBO_DSPVERSION, 0x403, 5, 0
+0x3631, 0x6d6d, "\000" 
+    IDC_COMBO_Msize, 0x403, 8, 0
+0x3032, 0x2a30, 0x3032, 0x0030, 
+    IDC_COMBO_Mnum, 0x403, 2, 0
+0x0031, 
+    IDC_COMBO_Mnum, 0x403, 2, 0
+0x0032, 
+    IDC_COMBO_Mnum, 0x403, 2, 0
+0x0034, 
+    IDC_COMBO_Mnum, 0x403, 2, 0
+0x0038, 
+    IDC_COMBO_Mversion, 0x403, 5, 0
+0x3156, 0x302e, "\000" 
+    IDC_COMBO_Mversion, 0x403, 5, 0
+0x3156, 0x312e, "\000" 
+    IDC_COMBO2, 0x403, 5, 0
+0x3156, 0x312e, "\000" 
+    IDC_COMBO2, 0x403, 5, 0
+0x3156, 0x322e, "\000" 
+    IDC_COMBO3, 0x403, 5, 0
+0x3639, 0x3030, "\000" 
+    IDC_COMBO3, 0x403, 6, 0
+0x3231, 0x3038, 0x0030, 
+    IDC_COMBO3, 0x403, 6, 0
+0x3735, 0x3036, 0x0030, 
+    IDC_COMBO3, 0x403, 7, 0
+0x3131, 0x3235, 0x3030, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// JPG
+//
+
+IDR_JPG2                JPG                     "res\\timg.jpg"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_ACCELERATOR_OPENFILE ACCELERATORS 
+BEGIN
+    VK_F5,          IDC_BUTTON_OPENFILE,    VIRTKEY, NOINVERT
+    VK_F6,          IDC_BUTTON_HARDUPDATE,  VIRTKEY, NOINVERT
+    VK_F7,          IDC_BUTTON_GETVERSION,  VIRTKEY, NOINVERT
+    VK_F8,          IDC_BUTTON_DSP,         VIRTKEY, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// PNG
+//
+
+IDB_PNG_OPENFILE        PNG                     "res\\Folder Type 1 Color Green.png"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU_fun MENU 
+BEGIN
+    POPUP "文件"
+    BEGIN
+        MENUITEM "打开固件",                        ID_32785
+    END
+    MENUITEM "工具",                          0
+    MENUITEM "注册",                          0
+    POPUP "窗口"
+    BEGIN
+        MENUITEM "平铺",                          ID_32786
+        MENUITEM "全屏",                          ID_32787
+        MENUITEM "缩小",                          ID_32788
+        MENUITEM "最大化",                         ID_32789
+    END
+    POPUP "帮助"
+    BEGIN
+        MENUITEM "说明书",                         ID_32790
+        MENUITEM "产品系列对照",                      ID_32791
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 focus_sound(&A)..."
+END
+
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\focus_sound.rc2"  // 非 Microsoft Visual C++ 编辑的资源
+#include "l.CHS\afxres.rc"      // 标准组件
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
